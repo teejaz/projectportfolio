@@ -1,4 +1,4 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse, render
 
 
 def projects(request):
@@ -6,4 +6,4 @@ def projects(request):
 
 
 def home(request):
-    return HttpResponse("this is main page")
+    return render(request, 'projects/home.html')
